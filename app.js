@@ -15,7 +15,14 @@ export default function App() {
       <StatusBar barStyle="dark-content" />
       <NavigationContainer>
         <Tab.Navigator>
-          <Tab.Screen name="Home" component={HomeStack} />
+          <Tab.Screen
+            name="Home"
+            component={HomeStack}
+            // options={{
+            //   tabBarLabel: 'Home',
+            //   tabBarIcon: ({color, size}) =>,
+            // }}
+          />
           <Tab.Screen name="Coming Soon" component={ComingSoonStack} />
           <Tab.Screen name="More" component={MoreStack} />
         </Tab.Navigator>
